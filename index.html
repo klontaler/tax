@@ -14,6 +14,10 @@
     <meta property="og:locale" content="ru_RU">
     <meta property="og:url" content= "https://klontaler.github.io/tax/" />
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,500;0,600;0,700;1,200;1,500&display=swap" rel="stylesheet">
+    
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>Плотина ... логи</title>
@@ -21,7 +25,106 @@
 
 <body>
     <background></background>
+
+    <!-- <fullBodyContainer>
+        <section id="salaryInput">
+
+            <h2>Введите свою заработную плату после вычета налогов:</h2>
+            <input style="margin: 20px auto;" inputmode="numeric" onkeydown="return checkNumber(event.key)" type="text" placeholder="В рублях" autocomplete="off">
+            <button id="buttonSI">Далее</button>
+
+        </section>
+    </fullBodyContainer> -->
+
+    <!-- <fullBodyContainer>
+        <section id="clarification">
+
+            <h2>Для более точного расчета ответьте на эти вопросы: </h2>
+
+            <h3>В какой организации вы работаете?</h3>
+            <select name="busSize" id="BS">
+                <option selected disabled hidden>?</option>
+                <option value="SMBs">В стандартной</option>
+                <option value="SMBs">Малого или среднего бизнеса</option>
+                <option value="IT">IT-сектора</option>
+            </select>
+
+            <h3>Какой у вас класс профессионального риска?</h3>
+            <select name="busSize" id="BS">
+                <option value="default" selected hidden>Оставьте, если не знаете</option>
+                <option value="1">Первый класс</option>
+                <option value="2">Второй класс</option>
+                <option value="3">Третий класс</option>
+                <option value="4">Четвертый класс</option>
+                <option value="5">Пятый класс</option>
+                <option value="6">Шестой класс</option>
+                <option value="7">Седьмой класс</option>
+                <option value="8">Восьмой класс</option>
+                <option value="9">Девятый класс</option>
+                <option value="10">Десятый класс</option>
+                <option value="11">Одиннадцатый класс</option>
+                <option value="12">Двенадцатый класс</option>
+                <option value="13">Тринадцатый класс</option>
+                <option value="14">Четырнадцатый класс</option>
+                <option value="15">Пятнадцатый класс</option>
+                <option value="16">Шестнадцатый класс</option>
+                <option value="17">Семнадцатыйкласс</option>
+                <option value="18">Восемнадцатый класс</option>
+                <option value="19">Девятнадцатый класс</option>
+                <option value="20">Двадцатый класс</option>
+                <option value="21">Двадцать первый класс</option>
+                <option value="22">Двадцать второйкласс</option>
+                <option value="23">Двадцать третий класс</option>
+                <option value="24">Двадцать четвертый класс</option>
+                <option value="25">Двадцать пятый класс</option>
+                <option value="26">Двадцать шестой класс</option>
+                <option value="27">Двадцать седьмой класс</option>
+                <option value="28">Двадцать восьмойкласс</option>
+                <option value="29">Двадцать девятый класс</option>
+                <option value="30">Тридцатый класс</option>
+                <option value="31">Тридцать первый класс</option>
+                <option value="32">Тридцать второй класс</option>
+            </select>
+
+            <button style="margin-top: 20px;" id="buttonClar">Далее</button>
+        </section>    
+    </fullBodyContainer> -->
+
+    <section id="result">
+        <section class="resultItem" id="total">
+            <div class="resultText bigText">Затраты вашего работодателя на вас составляют: <span class="resultSpanJ" id="totalSpan">123</span></div>
+            <button style="left: 96%; top: 6%;" class="roundButton">+</button>
+        </section>
+
+        <section class="resultItem" id="ndfl">
+            <div class="resultText" id="ndflText">Налог на добавленную стоимость составляет: <span class="resultSpanJ" id="ndflSpan">123</span></div>
+            <button style="left: 94%; top: 6%;" class="roundButton">+</button>
+        </section>
+
+        <section class="resultItem" id="ops">
+            <div class="resultText bigText">Страховые взносы в пенсионный фонд составляют: <span class="resultSpanJ" id="opsSpan">123</span></div>
+            <button style="top: 14%;" class="roundButton">+</button>
+        </section>
+
+        <section class="resultItem" id="oms">
+            <div class="resultText">Взносы по ОМС: <span class="resultSpanJ" id="omsSpan">123</span></div>
+            <button class="roundButton">+</button>
+        </section>
+
+        <section class="resultItem" id="vnim">
+            <div class="resultText">Взносы по ВНиМ: <span class="resultSpanJ" id="vnimSpan">123</span></div>
+            <button class="roundButton">+</button>
+        </section>
+
+        <section class="resultItem" id="travm">
+            <div class="resultText">Взносы в ФСС: <span class="resultSpanJ" id="travmSpan">123</span></div>
+            <button class="roundButton">+</button>
+        </section>
+    </section>
     
+    <button id="back">Назад</button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

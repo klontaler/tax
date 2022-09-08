@@ -2,6 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 8px 12px;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    margin: 0 auto;
+
+}
+
+input {
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 3px 8px;
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+select {
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 3px 8px;
+    width: auto;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+    font-size: 16px;
+    text-align: center;
 }
 
 background {
@@ -12,10 +64,142 @@ background {
     background-image: url(assets/backgroundLandscape.png);
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+fullBodyContainer {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    border-radius: 16px;
+    padding: 40px;
+    margin: 0 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+section#salaryInput {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+section#clarification {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 30px;
+}
+
+section#result {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "total total total"
+        "ndfl ndfl oms"
+        "ndfl ndfl ops"
+        "vnim travm ops";
+    margin: 5% 16%;
+}
+
+.resultItem {
+    background-color: rgba(240, 240, 240, 0.9);
+    margin: 10px;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.resultItem#total {
+    grid-area: total;
+    background-image: url(assets/total.png);
+}
+.resultItem#ndfl {
+    grid-area: ndfl;
+    background-image: url(assets/ndfl.png);
+}
+.resultItem#ops {
+    grid-area: ops;
+    background-image: url(assets/ops.jpg);
+}
+.resultItem#oms {
+    grid-area: oms;
+    background-image: url(assets/oms.jpg);
+}
+.resultItem#vnim {
+    grid-area: vnim;
+    background-image: url(assets/vnim.png);
+}
+.resultItem#travm {
+    grid-area: travm;
+    background-image: url(assets/travm.png);
+}
+
+.resultText {
+    font-weight: 600;
+    color: #fff;
+    font-size: 28px;
+}
+
+.bigText {
+    font-size: 42px;
+}
+
+#ndflText {
+    font-size: 68px;
+}
+
+.resultSpanJ {
+    font-weight: 700;
+    color: #fff;
+    font-size: inherit;
+}
+
+.roundButton {
+    position: relative;
+    left: 90%;
+    top: 55%;
+    border-radius: 300px;
+    padding: 8px 19px;
+    font-size: 28px;
+    transition: background-color .3s ease, rotate 1.6s ease;
+}
+
+.roundButton:hover {
+    background-color: #fff;
+    rotate: 180deg;
+}
+
+button#back {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+}
+
+@media only screen and (max-width: 1600px) {
+    section#result {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: repeat(12, 1fr);
+        margin: 68px 5%;
+    }
+
+    button#back {
+        top: 14px;
+        right: 14px;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
-    
+
 }
 
 @media only screen and (max-width: 833px) {
