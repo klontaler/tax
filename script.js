@@ -38,6 +38,6 @@ buttonClar.onclick = function() {
 buttonBack.onclick = function() {
     sectionSI.style.display = 'flex';
     sectionR.style.display = 'none';
-    FBCSI.style.display = 'f;ex'
+    FBCSI.style.display = 'flex'
     inputSal.innerHTML = '';
 }
