@@ -171,11 +171,24 @@ section#result {
     padding: 8px 19px;
     font-size: 28px;
     transition: background-color .3s ease, rotate 1.6s ease;
+    display: none;
 }
 
 .roundButton:hover {
     background-color: #fff;
     rotate: 180deg;
+}
+
+.roundButton#totalB {
+    left: 96%; 
+    top: 6%
+}
+.roundButton#ndflB {
+    left: 94%; 
+    top: 6%;
+}
+.roundButton#opsB {
+    top: 14%
 }
 
 button#back {
@@ -184,30 +197,129 @@ button#back {
     right: 28px;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1900px) {
     section#result {
-        display: grid;
         grid-template-columns: 1fr;
-        grid-auto-rows: repeat(12, 1fr);
-        margin: 68px 5%;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "total"
+        "ndfl"
+        "oms"
+        "ops"
+        "vnim"
+        "travm";
+        margin: 68px 15%;
     }
-
     button#back {
         top: 14px;
         right: 14px;
     }
+    .resultText {
+        font-size: 68px;
+    }
+    .bigText {
+        font-size: 68px;
+    }
+    #ndflText {
+        font-size: 68px;
+    }
+    .roundButton#opsB {
+        top: 3%;
+    }
+    .roundButton#totalB {
+        top: 10%;
+        left: 90%;
+    }
+    .roundButton#ndflB {
+        top: 6%;
+        left: 90%;
+    }
+
 }
 
 @media only screen and (max-width: 1080px) {
-
+    .resultText {
+        font-size: 38px;
+    }
+    .bigText {
+        font-size: 38px;
+    }
+    #ndflText {
+        font-size: 38px;
+    }
 }
 
-@media only screen and (max-width: 833px) {
 
+@media only screen and (max-width: 640px) {
+    section#result {
+        margin: 68px 10px;
+        padding: 16px;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: 
+        "total"
+        "total"
+        "total"
+        "ndfl"
+        "ndfl"
+        "oms"
+        "ops"
+        "ops"
+        "vnim"
+        "travm";
+    }
+    .resultItem {
+        padding: 16px;
+    }
+    .resultText {
+        font-size: 32px;
+    }
+    .bigText {
+        font-size: 38px;
+    }
+    #ndflText {
+        font-size: 38px;
+    }
+    .roundButton {
+        padding: 4px 15px;
+        left: 85%;    
+        top: 8%;
+    }
+    .roundButton#totalB {
+        top: 38%;
+        left: 85%;    
+    }
+    .roundButton#opsB {
+        left: 85%;    
+
+    }
+    .roundButton#ndflB {
+        left: 85%;    
+
+    }
 }
 
+@media only screen and (max-width: 378px) {
+    section#result {
+        margin: 68px 5px;
+        padding: 10px;
 
-@media only screen and (max-width: 460px) {
+    }
+    .resultItem {
+        padding: 10px;
+    }
+    .resultText {
+        font-size: 24px;
+    }
+    .bigText {
+        font-size: 28px;
+    }
+    #ndflText {
+        font-size: 28px;
+    }
+    .roundButton {
+        padding: 1.3px 11px;
+        font-size: 24px;
+    }
 
 }
 
