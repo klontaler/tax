@@ -28,6 +28,11 @@ button {
     height: auto;
     font-size: 18px;
     margin: 0 auto;
+    transition: background-color .3s ease;
+}
+
+button:hover {
+    background-color: #fff;
 
 }
 
@@ -175,7 +180,6 @@ section#result {
 }
 
 .roundButton:hover {
-    background-color: #fff;
     rotate: 180deg;
 }
 
@@ -191,7 +195,7 @@ section#result {
     top: 14%
 }
 
-button#back {
+button#buttonBack {
     position: absolute;
     top: 28px;
     right: 28px;
@@ -210,7 +214,7 @@ button#back {
         "travm";
         margin: 68px 15%;
     }
-    button#back {
+    button#buttonBack {
         top: 14px;
         right: 14px;
     }

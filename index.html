@@ -26,18 +26,19 @@
 <body>
     <background></background>
 
-    <!-- <fullBodyContainer>
+    <fullBodyContainer>
         <section id="salaryInput">
 
             <h2>Введите свою заработную плату после вычета налогов:</h2>
-            <input style="margin: 20px auto;" inputmode="numeric" onkeydown="return checkNumber(event.key)" type="text" placeholder="В рублях" autocomplete="off">
+            <input style="margin: 20px auto;" inputmode="numeric" onkeydown="return checkNumber(event.key)" type="text" placeholder="В рублях" autocomplete="off" id="inputSal">
+            
             <button id="buttonSI">Далее</button>
 
         </section>
-    </fullBodyContainer> -->
+    </fullBodyContainer>
 
-    <!-- <fullBodyContainer>
-        <section id="clarification">
+    <fullBodyContainer>
+        <section id="clarification" style="display: none;">
 
             <h2>Для более точного расчета ответьте на эти вопросы: </h2>
 
@@ -88,9 +89,9 @@
 
             <button style="margin-top: 20px;" id="buttonClar">Далее</button>
         </section>    
-    </fullBodyContainer> -->
+    </fullBodyContainer>
 
-    <section id="result">
+    <section id="result" style="display: none;">
         <section class="resultItem" id="total">
             <div class="resultText bigText">Затраты вашего работодателя на вас составляют: <span class="resultSpanJ" id="totalSpan">123</span></div>
             <button class="roundButton" id="totalB">+</button>
@@ -122,7 +123,7 @@
         </section>
     </section>
     
-    <button id="back">Назад</button>
+    <button id="buttonBack" style="display: none;">Назад</button>
 
     <script src="script.js"></script>
 </body>
