@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+background {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    background-image: url(assets/backgroundLandscape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1080px) {
+    
+}
+
+@media only screen and (max-width: 833px) {
+
+}
+
+
+@media only screen and (max-width: 460px) {
+
+}
+
+@media only screen and (orientation: portrait) {
+    background {
+        background-image: url(assets/backgroundPortrait.png);
+    }
+}
