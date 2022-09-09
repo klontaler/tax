@@ -228,12 +228,12 @@ function totalCalc() {
 function results() {
     totalCalc();
 
-    totalSpan.innerHTML = total + " ";
-    ndflSpan.innerHTML = ndfl;
-    opsSpan.innerHTML = ops;
-    omsSpan.innerHTML = oms;
-    vnimSpan.innerHTML = vnim;
-    travmSpan.innerHTML = travm;
+    totalSpan.innerHTML = total + " ₽";
+    ndflSpan.innerHTML = ndfl + " ₽";
+    opsSpan.innerHTML = ops + " ₽";
+    omsSpan.innerHTML = oms + " ₽";
+    vnimSpan.innerHTML = vnim + " ₽";
+    travmSpan.innerHTML = travm + " ₽";
 }
 
 // main code
