@@ -104,7 +104,7 @@ section#clarification {
 section#result {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 259px);
     grid-template-areas: 
         "total total total"
         "ndfl ndfl oms"
@@ -118,12 +118,17 @@ section#result {
     margin: 10px;
     background-repeat: none;
     background-size: cover;
+    transition: transform .6s ease;
 }
 
 .resultItem#total {
     grid-area: total;
     background-image: url(assets/total.png);
 }
+.totalOpen {
+    height: 600px;
+}
+
 .resultItem#ndfl {
     grid-area: ndfl;
     background-image: url(assets/ndfl.png);
@@ -150,12 +155,18 @@ section#result {
     color: #fff;
     font-size: 28px;
 }
+.explainText {
+    font-weight: 600;
+    color: #fff;
+    font-size: 26px;
+    transform: rotatey(180deg);
+}
 
 .bigText {
     font-size: 42px;
 }
 
-#ndflText {
+.ndflText {
     font-size: 68px;
 }
 
@@ -198,10 +209,18 @@ button#buttonBack {
     right: 28px;
 }
 
+.rotate180 {
+    transform: rotatey(180deg);
+}
+
+.displayN {
+    display: none;
+}
+
 @media only screen and (max-width: 1900px) {
     section#result {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 559px);
         grid-template-areas: 
         "total"
         "ndfl"
@@ -239,6 +258,9 @@ button#buttonBack {
 }
 
 @media only screen and (max-width: 1080px) {
+    section#result {
+        grid-template-rows: repeat(6, 400px);
+    }
     .resultText {
         font-size: 38px;
     }
@@ -255,7 +277,7 @@ button#buttonBack {
     section#result {
         margin: 68px 10px;
         padding: 16px;
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 200px);
         grid-template-areas: 
         "total"
         "total"
@@ -301,6 +323,7 @@ button#buttonBack {
 
 @media only screen and (max-width: 378px) {
     section#result {
+        grid-template-rows: repeat(6, 1fr);
         margin: 68px 5px;
         padding: 10px;
 

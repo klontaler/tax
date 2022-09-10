@@ -21,6 +21,27 @@ let omsSpan = document.getElementById('omsSpan');
 let vnimSpan = document.getElementById('vnimSpan');
 let travmSpan = document.getElementById('travmSpan');
 
+let totalSec = document.getElementById('total');
+let ndflSec = document.getElementById('ndfl');
+let opsSec = document.getElementById('ops');
+let omsSec = document.getElementById('oms');
+let vnimSec = document.getElementById('vnim');
+let travmSec = document.getElementById('travm'); 
+
+let totalRT = document.getElementById('totalRT');
+let ndflRT = document.getElementById('ndflRT');
+let opsRT = document.getElementById('opsRT');
+let omsRT = document.getElementById('omsRT');
+let vnimRT = document.getElementById('vnimRT');
+let travmRT = document.getElementById('travmRT');
+
+let totalET = document.getElementById('totalET');
+let ndflET = document.getElementById('ndflET');
+let opsET = document.getElementById('opsET');
+let omsET = document.getElementById('omsET');
+let vnimET = document.getElementById('vnimET');
+let travmET = document.getElementById('travmET');
+
 let benefits;
 let PRC;
 let preSalary;
@@ -31,7 +52,7 @@ let ops;
 let oms;
 let vnim;
 let travm;
-let total;
+let totalVa;
 
 // html functions
 function checkNumber(key) {
@@ -246,6 +267,54 @@ inputSal.oninput = function() {
         buttonSI.disabled = false;
     }
 };
+
+totalSec.onclick = function() {
+    totalSec.classList.toggle('rotate180');
+    setTimeout(() => {
+        totalRT.classList.toggle('displayN');
+        totalET.classList.toggle('displayN');
+    }, 250);
+}
+
+ndflSec.onclick = function() {
+    ndflSec.classList.toggle('rotate180');
+    setTimeout(() => {
+        ndflRT.classList.toggle('displayN');
+        ndflET.classList.toggle('displayN');
+    }, 250);
+}
+
+opsSec.onclick = function() {
+    opsSec.classList.toggle('rotate180');
+    setTimeout(() => {
+        opsRT.classList.toggle('displayN');
+        opsET.classList.toggle('displayN');
+    }, 250);
+}
+
+omsSec.onclick = function() {
+    omsSec.classList.toggle('rotate180');
+    setTimeout(() => {
+        omsRT.classList.toggle('displayN');
+        omsET.classList.toggle('displayN');
+    }, 250);
+}
+
+vnimSec.onclick = function() {
+    vnimSec.classList.toggle('rotate180');
+    setTimeout(() => {
+        vnimRT.classList.toggle('displayN');
+        vnimET.classList.toggle('displayN');
+    }, 250);
+}
+
+travmSec.onclick = function() {
+    travmSec.classList.toggle('rotate180');
+    setTimeout(() => {
+        travmRT.classList.toggle('displayN');
+        travmET.classList.toggle('displayN');
+    }, 250);
+}
 
 
 
