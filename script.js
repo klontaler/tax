@@ -239,8 +239,15 @@ function results() {
 // main code
 inputSal.oninput = function() {
     preSalary = inputSal.value;
-    console.log(preSalary);
+    if (inputSal.value == '') {
+        buttonSI.disabled = true;
+    }
+    else {
+        buttonSI.disabled = false;
+    }
 };
+
+
 
 buttonSI.onclick = function() {
     sectionSI.style.display = 'none'; 
