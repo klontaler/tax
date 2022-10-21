@@ -114,16 +114,14 @@ section#result {
 }
 
 .resultItem {
-    background-color: rgba(240, 240, 240, 0.9);
     margin: 10px;
-    background-repeat: none;
-    background-size: cover;
     transition: transform .6s ease;
 }
 
 .resultItem#total {
     grid-area: total;
-    background-image: url(assets/total.png);
+    background: rgb(96,207,252);
+    background: radial-gradient(circle, rgba(96,207,252,1) 0%, rgba(8,42,147,1) 100%);
 }
 .totalOpen {
     height: 600px;
@@ -131,24 +129,24 @@ section#result {
 
 .resultItem#ndfl {
     grid-area: ndfl;
-    background-image: url(assets/ndfl.png);
-}
+    background: rgb(134,161,214);
+    background: linear-gradient(37deg, rgba(134,161,214,1) 0%, rgba(206,112,224,1) 100%); }
 .resultItem#ops {
     grid-area: ops;
-    background-image: url(assets/ops.jpg);
-}
+    background: rgb(1,4,20);
+    background: linear-gradient(57deg, rgba(1,4,20,1) 0%, rgba(191,171,203,0.6964986678265056) 26%, rgba(7,22,131,1) 52%, rgba(98,100,175,1) 100%); }
 .resultItem#oms {
     grid-area: oms;
-    background-image: url(assets/oms.jpg);
-}
+    background: rgb(49,125,250);
+    background: linear-gradient(90deg, rgba(49,125,250,1) 0%, rgba(238,194,253,1) 100%);}
 .resultItem#vnim {
     grid-area: vnim;
-    background-image: url(assets/vnim.png);
-}
+    background: rgb(113,160,121);
+    background: linear-gradient(90deg, rgba(113,160,121,1) 0%, rgba(18,22,25,1) 44%, rgba(195,110,225,1) 100%); }
 .resultItem#travm {
     grid-area: travm;
-    background-image: url(assets/travm.png);
-}
+    background: rgb(189,238,255);
+    background: linear-gradient(90deg, rgba(189,238,255,1) 22%, rgba(42,52,96,1) 100%);}
 
 .resultText {
     font-weight: 600;
